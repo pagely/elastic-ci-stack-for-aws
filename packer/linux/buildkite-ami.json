@@ -21,7 +21,8 @@
       "ssh_username": "ec2-user",
       "ami_name": "buildkite-stack-linux-{{isotime | clean_ami_name}}",
       "ami_description": "Buildkite Elastic Stack (Amazon Linux 2 LTS w/ docker)",
-      "ami_groups": ["all"]
+      "ami_groups": ["all"],
+      "associate_public_ip_address": true
     }
   ],
   "provisioners": [
@@ -64,6 +65,10 @@
       "inline": [
         "rm /home/ec2-user/.ssh/authorized_keys"
       ]
+    },
+    {
+      "type": "shell",
+      "script": "scripts/install-php.sh"
     }
   ]
 }
