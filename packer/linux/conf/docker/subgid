@@ -1,2 +1,4 @@
+buildkite-agent:2000:1
 buildkite-agent:1001:1
+docker:2000:33
 buildkite-agent:100000:65536
