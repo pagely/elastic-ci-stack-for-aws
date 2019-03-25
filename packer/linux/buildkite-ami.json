@@ -69,6 +69,10 @@
     {
       "type": "shell",
       "script": "scripts/install-php.sh"
+    },
+    {
+      "type": "shell",
+      "script": "scripts/install-pagely.sh"
     }
   ]
 }
