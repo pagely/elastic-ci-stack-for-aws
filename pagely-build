@@ -9,4 +9,5 @@ export AWS_SECRET_ACCESS_KEY=$(echo $JSON | jq -r '.Credentials.SecretAccessKey'
 export AWS_SESSION_TOKEN=$(echo $JSON | jq -r '.Credentials.SessionToken')
 
 make clean
-make
+make make build/linux-ami.txt
+make build
