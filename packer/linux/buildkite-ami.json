@@ -70,6 +70,10 @@
     },
     {
       "type": "shell",
+      "script": "scripts/install-php.sh"
+    },
+    {
+      "type": "shell",
       "inline": [
         "rm /home/ec2-user/.ssh/authorized_keys"
       ]
